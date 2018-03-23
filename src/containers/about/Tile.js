@@ -14,9 +14,10 @@ export default ({ title, sub, icon }) => {
       }}
     >
       <Circle>
-        <Icon />
+        <Icon name={icon} size="40" color='white'/>
       </Circle>
-      <Title size={12} max="240px">{sub}</Title>
+      <Title color="black" size={12} max="240px">{title}</Title>
+      <Title color="black" size={12} max="240px">{sub}</Title>
     </div>
   );
 };

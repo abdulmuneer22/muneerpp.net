@@ -2,36 +2,38 @@ import React from "react";
 import Title from "../../components/Title";
 import Wrapper from "../../components/wrapper";
 import HorizontalRow from "../../components/HorizontalRow";
+import Skills from "./Skills";
 
 import Tile from "./Tile";
 
 const ab_list = [
   {
-    title: "Fast",
+    title: "Mobile APPs",
     sub: "Fast load times and lag free interaction, my highest priority.",
-    icon: "fast"
+    icon: "mobile"
   },
   {
-    title: "Responsive",
+    title: "Web APPs",
     sub: "My layouts will work on any device, big or small.",
-    icon: "fast"
+    icon: "web"
   },
   {
-    title: "Intuitive",
+    title: 'REST API Development',
     sub: "Strong preference for easy to use, intuitive UX/UI.",
-    icon: "fast"
+    icon: "api"
   },
   {
     title: "Dynamic",
     sub: "Websites don't have to be static, I love making pages come to life.",
-    icon: "fast"
+    icon: "dynamic"
   }
 ];
 
 export default () => {
   return (
-    <Wrapper>
-      <Title>ABOUT</Title>
+    <Wrapper background_color="white"  j_c="flex-start">
+      <Title color="black">ABOUT</Title>
+      <Skills />
       <HorizontalRow>{ab_list.map(itm => <Tile {...itm} />)}</HorizontalRow>
     </Wrapper>
   );

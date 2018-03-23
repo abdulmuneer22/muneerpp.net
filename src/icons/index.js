@@ -1,12 +1,12 @@
 import React from "react";
 
-export default ({ name, height }) => {
+export default ({ name, size, color }) => {
   return (
-    <img
-      src={`/assets/${name || "speed"}.svg`}
+    <span
+      class={`icon-${name}`}
       style={{
-        height: `${height || "60px"}`,
-        fill: "white"
+        fontSize: `${size || "14"}px`,
+        color: `${color || "red"}`
       }}
     />
   );

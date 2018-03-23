@@ -12,14 +12,14 @@ export default () => {
         flex: 1,
         display: "flex",
         background: "red",
-        flexDirection : 'column'
+        flexDirection: "column"
       }}
     >
       <Landing />
       <About />
       <Portfolio />
-      {/* <Blog />
-      <Contact /> */}
+      {/* <Blog />*/}
+      <Contact />
     </div>
   );
 };
