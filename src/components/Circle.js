@@ -12,6 +12,11 @@ const Circle = styled.div`
   margin: 20px 10px;
   color: white;
   font-size : 18px;
+  :hover {
+    background-color : grey;
+  border: 1px solid grey;
+    
+  }
 `;
 
 export default Circle;

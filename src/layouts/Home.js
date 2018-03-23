@@ -11,7 +11,6 @@ export default () => {
       style={{
         flex: 1,
         display: "flex",
-        background: "red",
         flexDirection: "column"
       }}
     >

@@ -10,7 +10,8 @@ export default ({ title, sub, icon }) => {
         margin: "10px",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
+        cursor : 'pointer'
       }}
     >
       <Circle>

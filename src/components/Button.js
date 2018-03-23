@@ -9,6 +9,11 @@ const Button = styled.div`
   max-width: 150px;
   display: flex;
   justify-content: center;
+  :hover {
+    background: ${props => props.color || "white"};
+    color: ${props => props.background || "black"};
+    cursor: pointer;
+  }
 `;
 
 export default Button;
