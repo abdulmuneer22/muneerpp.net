@@ -4,20 +4,17 @@ import About from "../containers/about";
 import Portfolio from "../containers/portfolio";
 import Blog from "../containers/blog";
 import Contact from "../containers/contact";
+import ProjectDetails from "../containers/project_details";
 
-export default () => {
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
+export default ({ history }) => {
+  // console.log("Home props", props);
   return (
-    <div
-      style={{
-        flex: 1,
-        display: "flex",
-        flexDirection: "column"
-      }}
-    >
+    <div>
       <Landing />
       <About />
-      <Portfolio />
-      {/* <Blog />*/}
+      <Portfolio {...history} />
       <Contact />
     </div>
   );

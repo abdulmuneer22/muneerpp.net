@@ -7,7 +7,6 @@ const Title = styled.div`
   font-size: ${props => props.size || "40px"};
   text-align: center;
   border-bottom: ${props => props.border_width || "0px"} solid black;
-  
 `;
 
 export default Title;

@@ -1,0 +1,9 @@
+.ant-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-modal-content {
+  width: 160%;
+}

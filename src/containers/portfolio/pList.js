@@ -24,9 +24,10 @@ const pList = [
     thumb: "url(/assets/appscreens/runway_1.png)"
   },
   {
-    name: "Roambi",
-    sub: "pure javacript",
-    category: "js"
+    name: "NGAGE",
+    sub: "React Native",
+    category: "js",
+    thumb: "url(/assets/appscreens/ngage_1.png)"
   },
   {
     name: "Roambi",

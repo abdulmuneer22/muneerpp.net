@@ -3,6 +3,7 @@ import Card from "../../components/Card";
 import Icon from "../../icons";
 import Title from "../../components/Title";
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 export class ProjectTile extends Component {
   constructor(props) {
@@ -12,10 +13,14 @@ export class ProjectTile extends Component {
     };
   }
 
-  render() {
-    const { name, sub, category, thumb } = this.props;
-    const { hovered } = this.state;
+  handleOnClick = () => {
+    const { push,name } = this.props;
+    push(`/project-details/${name}`);
+  };
 
+  render() {
+    const { name, sub, category, thumb, onClick } = this.props;
+    const { hovered } = this.state;
     return (
       <Card
         style={{
@@ -42,7 +47,8 @@ export class ProjectTile extends Component {
             <Title color="black" size="10">
               {sub}
             </Title>
-            <Button border="green" color="green">
+
+            <Button border="green" color="green" onClick={this.handleOnClick}>
               Learn more
             </Button>
           </div>

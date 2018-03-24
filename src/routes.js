@@ -1,20 +1,19 @@
-import {
-  Switch,
-  Redirect,
-  Route,
-  BrowserRouter as Router
-} from "react-router-dom";
-
 import React from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-import Landing from "./containers/landing";
+import Home from "./layouts/Home";
+import ProjectDetails from "./containers/project_details";
 
-const Routes = () => (
+export default () => (
   <Router>
     <Switch>
-      <Route path="/" exact render={props => <Landing />} />
+      <Route path="/" exact component={Home} />
+      <Route
+        path="/project-details/:projectId"
+        exact
+        component={ProjectDetails}
+      />
+      <Route path="/*" exact component={Home} />
     </Switch>
   </Router>
 );
-
-export default Routes;
