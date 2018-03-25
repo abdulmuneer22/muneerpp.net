@@ -2,11 +2,10 @@ import React from "react";
 import Landing from "../containers/landing";
 import About from "../containers/about";
 import Portfolio from "../containers/portfolio";
-import Blog from "../containers/blog";
+// import Blog from "../containers/blog";
 import Contact from "../containers/contact";
 import ProjectDetails from "../containers/project_details";
-
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Footer from '../components/Footer'
 
 export default ({ history }) => {
   // console.log("Home props", props);
@@ -16,6 +15,7 @@ export default ({ history }) => {
       <About />
       <Portfolio {...history} />
       <Contact />
+      <Footer />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import pList from "./pList";
 import FlexWrap from "../../components/FlexWrap";
 import Title from "../../components/Title";
 import { Modal } from "antd";
+import Toggles from "./Toggle";
 
 import "./modal.css";
 
@@ -12,7 +13,8 @@ export default class componentName extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: true
+      showModal: true,
+      activeTab: 0
     };
   }
 
@@ -22,8 +24,14 @@ export default class componentName extends Component {
     });
   };
 
+  updateTab = tab => {
+    this.setState({
+      activeTab: tab
+    });
+  };
+
   render() {
-    const { showModal } = this.state;
+    const { showModal, activeTab } = this.state;
     return (
       <div>
         <Wrapper
@@ -36,9 +44,16 @@ export default class componentName extends Component {
             PROJECTS
           </Title>
 
+          <Toggles activeTab={activeTab} updateTab={this.updateTab} />
+
           <FlexWrap>
             {pList.map((p, ind) => (
-              <ProjectTile {...p} key={ind} onClick={this.handleLearnMore} {...this.props}/>
+              <ProjectTile
+                {...p}
+                key={ind}
+                onClick={this.handleLearnMore}
+                {...this.props}
+              />
             ))}
           </FlexWrap>
         </Wrapper>

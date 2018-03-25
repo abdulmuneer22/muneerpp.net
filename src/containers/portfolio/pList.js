@@ -12,8 +12,8 @@ const pList = [
     thumb: "url(/assets/appscreens/nomad_1.png)"
   },
   {
-    sub: "Steerity",
-    category: "React Native",
+    name: "Steerity",
+    sub: "React Native",
     category: "js",
     thumb: "url(/assets/appscreens/steerity_1.png)"
   },
@@ -28,21 +28,6 @@ const pList = [
     sub: "React Native",
     category: "js",
     thumb: "url(/assets/appscreens/ngage_1.png)"
-  },
-  {
-    name: "Roambi",
-    sub: "pure javacript",
-    category: "js"
-  },
-  {
-    name: "Roambi",
-    sub: "pure javacript",
-    category: "js"
-  },
-  {
-    name: "Roambi",
-    sub: "pure javacript",
-    category: "js"
   }
 ];
 

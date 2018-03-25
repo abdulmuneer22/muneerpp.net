@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import Card from "../../components/Card";
-import Icon from "../../icons";
 import Title from "../../components/Title";
 import Button from "../../components/Button";
-import { Link } from "react-router-dom";
 
 export class ProjectTile extends Component {
   constructor(props) {
@@ -14,7 +12,7 @@ export class ProjectTile extends Component {
   }
 
   handleOnClick = () => {
-    const { push,name } = this.props;
+    const { push, name } = this.props;
     push(`/project-details/${name}`);
   };
 
@@ -48,7 +46,12 @@ export class ProjectTile extends Component {
               {sub}
             </Title>
 
-            <Button border="green" color="green" onClick={this.handleOnClick}>
+            <Button
+              background="white"
+              border="black"
+              color="black"
+              onClick={this.handleOnClick}
+            >
               Learn more
             </Button>
           </div>

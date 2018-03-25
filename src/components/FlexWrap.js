@@ -5,7 +5,7 @@ const FlexWrap = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   max-width : 60%;
-  justify-content : center;
+  justify-content : flex-start;
 `;
 
 export default FlexWrap;

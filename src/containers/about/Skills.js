@@ -43,10 +43,8 @@ const Para = styled.p`
 const p1 =
   "I am fascinated about technology , i wrote my first computer program at age of 12 . I have been hooked with technologies and trends . as a";
 const full = ` I am fascinated about technology , i wrote my first computer program at
-age of 12 . I have been hooked with technologies and trends . as a
-professional i have done rigorous 6 month training on Core Java and
-Advanced Java . i did my bachelor degree in BE Computer Science . I am a
-part time Web Developer and User Interface Designer , but first i am a
+age of 12 . I have been hooked with technologies and trends . i did my bachelor degree in BE Computer Science . I am a
+part time Mobile and Web App Developer and User Interface Designer , but first i am a
 versatile person capable of switching into any technology though prefer
 web based technologies since it got more audience than any other product
 . Technology is ever changing animal . that's why it is always exciting
