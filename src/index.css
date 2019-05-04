@@ -16,3 +16,18 @@ body {
 .ant-carousel .slick-slide h3 {
   color: red;
 }
+
+.slick-slide > div {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  /* height: 400px; */
+  margin: 0px auto;
+}
+
+.slick-slide > div > img {
+  width: 400px;
+  /* height: 400px; */
+  margin: 0px auto;
+}
