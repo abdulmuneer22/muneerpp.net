@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Wrapper from "../../components/wrapper";
 import ProjectTile from "./project_tile";
-import pList from "./pList";
+import projectsList from "../../data/projects";
 import FlexWrap from "../../components/FlexWrap";
 import Title from "../../components/Title";
 import { Modal } from "antd";
@@ -47,7 +47,7 @@ export default class componentName extends Component {
           <Toggles activeTab={activeTab} updateTab={this.updateTab} />
 
           <FlexWrap>
-            {pList.map((p, ind) => (
+            {projectsList.map((p, ind) => (
               <ProjectTile
                 {...p}
                 key={ind}

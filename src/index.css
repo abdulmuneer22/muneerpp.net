@@ -6,9 +6,11 @@ body {
 
 .ant-carousel .slick-slide {
   text-align: center;
-  height: 400px !important;
+  /* height: 600px !important; */
+  width: 400px !important;
   line-height: 160px;
   overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .ant-carousel .slick-slide h3 {

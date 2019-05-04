@@ -19,14 +19,23 @@ const Value = styled.div`
   font-size: 18px;
   display: flex;
   flex: 1;
+  li {
+    margin-bottom: 20px;
+    list-style-position: inherit;
+    margin-left: 0px;
+  }
 `;
+
+function createMarkup(value) {
+  return { __html: value };
+}
 
 export default ({ data }) => {
   const { key, value } = data;
   return (
     <Row>
       <Label>{key}</Label>
-      <Value>{value}</Value>
+      <Value dangerouslySetInnerHTML={createMarkup(value)} />
     </Row>
   );
 };
