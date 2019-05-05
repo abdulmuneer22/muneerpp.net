@@ -1,20 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import Icon from "../../icons";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const footers = [
   {
     name: "Linkedin",
-    icon: "linkedin"
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/muneer-pp-5052b6128/"
   },
   {
     name: "Github",
-    icon: "github"
+    icon: "github",
+    link: "https://github.com/abdulmuneer22"
   },
   {
-    name: "Medium",
-    icon: "facebook"
+    name: "Facebook",
+    icon: "facebook",
+    link: "https://www.facebook.com/muneer.vatakara"
   }
 ];
 
@@ -49,9 +52,9 @@ export default () => (
     <div>
       {footers.map((f, ind) => (
         <FooterItem>
-          <Link to='/'>
-          <Icon name={f.icon} color="white" size={25} />
-          </Link>
+          <a href={f.link} target="_blank">
+            <Icon name={f.icon} color="white" size={25} />
+          </a>
         </FooterItem>
       ))}
     </div>
