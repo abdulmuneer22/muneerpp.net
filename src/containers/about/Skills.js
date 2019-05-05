@@ -24,6 +24,9 @@ const Wrapper = styled.div`
     padding: 10px 25px;
     margin: 20px 10px;
     color: #9fabb0;
+    a {
+      color: black;
+    }
   }
 `;
 
@@ -98,7 +101,11 @@ export class Skills extends Component {
           )} */}
         </Para>
 
-        <div className="d_r">DOWNLOAD RESUME</div>
+        <div className="d_r">
+          <a href="/assets/resume/muneer.pdf" download>
+            DOWNLOAD RESUME
+          </a>
+        </div>
       </Wrapper>
     );
   }
