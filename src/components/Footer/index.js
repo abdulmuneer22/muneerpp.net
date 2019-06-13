@@ -58,6 +58,6 @@ export default () => (
         </FooterItem>
       ))}
     </div>
-    <div>Muneer PP © 2018</div>
+    <div>Muneer PP © 2019</div>
   </FooterWrapper>
 );
